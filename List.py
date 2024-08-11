@@ -10,8 +10,8 @@ items=[]
 for i in range(2):
     print(f"Item {i}")
     name = input("Enter the item name:\n")
-    price = input("Enter the item price:\n")
-    quantity = input("Enter the item quantity:\n")
+    price = float(input("Enter the item price:\n"))
+    quantity = int(input("Enter the item quantity:\n"))
     new_item=ItemToPurchase(item_price=price,item_name=name,item_quantity=quantity)
     items.append(new_item)
 
