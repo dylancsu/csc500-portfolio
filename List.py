@@ -7,7 +7,7 @@ class ItemToPurchase:
         print(f'{self.item_name} {self.item_quantity} @ ${self.item_price} = ${self.item_price * self.item_quantity}')
 
 items=[]
-for i in range(2):
+for i in range(1,3):
     print(f"Item {i}")
     name = input("Enter the item name:\n")
     price = float(input("Enter the item price:\n"))
