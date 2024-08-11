@@ -4,7 +4,7 @@ class ItemToPurchase:
         self.item_price=kwargs.get('item_price',0.0)
         self.item_quantity=kwargs.get('item_quantity',0)
     def print_item_cost(self):
-        print(f'{self.item_name} {self.item_quantity} @ ${self.item_price} = ${self.item_price * self.item_quantity}')
+        print(f'{self.item_name} {self.item_quantity} @ ${self.item_price:.2f} = ${(self.item_price * self.item_quantity):.2f}')
 
 items=[]
 for i in range(1,3):
@@ -19,4 +19,4 @@ total_cost = 0.0
 for item in items:
     total_cost+=(item.item_price * item.item_quantity)
     item.print_item_cost()
-print(f"Total: ${total_cost}")
+print(f"Total: ${total_cost:.2f}")
