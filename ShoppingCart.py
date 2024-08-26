@@ -36,7 +36,7 @@ class ShoppingCart:
         return total
     def print_total(self):
         print(f"{self.customer_name}'s Shopping Cart - {self.current_date}")
-        print(f"Number of items: {self.get_num_items_in_cart}")
+        print(f"Number of items: {self.get_num_items_in_cart()}")
         total_cost = 0.0
         for item in self.cart_items:
             total_cost+=(item.item_price * item.item_quantity)
@@ -84,7 +84,7 @@ def print_menu(cart):
 
 def main():
     name = input("Enter your name: ")
-    date = input("Enter the currrent date")
+    date = input("Enter the current date")
     cart = ShoppingCart(customer_name=name,current_date=date)
     print_menu(cart)
 
