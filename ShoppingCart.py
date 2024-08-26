@@ -84,7 +84,7 @@ def print_menu(cart):
 
 def main():
     name = input("Enter your name: ")
-    date = input("Enter the current date")
+    date = input("Enter the current date: ")
     cart = ShoppingCart(customer_name=name,current_date=date)
     print_menu(cart)
 
